@@ -1,4 +1,6 @@
 let prompt = require('prompt-sync') ();
+// FOR LOOP
+
 // let n = Number(prompt("Enter a Number "));
 
 // switch(day ) {
@@ -113,6 +115,31 @@ let prompt = require('prompt-sync') ();
 
 // Q. Check if the numbr is prime or not.
 
-// let n = Number(prompt("Enter Number"))
+// let n = Number(prompt("Enter Number "))
+// let count= 0;
+// if (n<=1) console.log("Not Prime");
+// else {
+//     for (i=2; i<=n/2; i++) {
+//     if(n%i==0) count++;
 
-// for()
+// }
+// if (count == 0) console.log("Prime");
+//     else console.log("Not Prime");
+
+// }
+    
+// wHILE LOOP
+let n= Number(prompt("Enter the number: "));
+
+// Q. Reverse the number
+
+// let rev = 0;
+// while(n>0) {
+//     rev = (rev * 10) + (n%10);
+//     n = Math.floor(n/10);
+// }
+// console.log(rev);
+
+// Q. ISBN 
+
+ 
