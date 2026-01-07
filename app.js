@@ -129,7 +129,7 @@ let prompt = require('prompt-sync') ();
 // }
     
 // wHILE LOOP
-let n= Number(prompt("Enter the number: "));
+
 
 // Q. Reverse the number
 
@@ -140,6 +140,235 @@ let n= Number(prompt("Enter the number: "));
 // }
 // console.log(rev);
 
-// Q. ISBN 
+// Q. Know the number of digits 
 
- 
+//  let count = 0;
+//  while (n>0) {
+//     count++;
+//     n= (Math.floor(n/10));
+//  }
+//  console.log(count);
+
+
+// Q. ISBN
+
+// let copy= n, count = 0, ans= 0;
+
+// while (n>0) {
+//     count++;
+//     n = Math.floor(n/10);
+// }
+// if(count != 10) console.log("Invalid ISBN");
+// else{
+//     while(copy>0) {
+//         let dig= copy%10;
+//         ans = ans+ (dig*count);
+//         count--;
+//         copy= Math.floor(copy/10);
+//     }
+// }
+
+// console.log(ans%11==0? "valid isbn": "invalid isbn")
+
+// Q. Automorphic Number
+
+//  let n= Number(prompt("Enter the number: "));
+//  let sq= n*n;
+//  let copy= n, count = 0;
+//  while (n>0) {
+//      count++;
+//      n = Math.floor(n/10);
+
+
+// }
+// console.log(count);
+
+// if(sq%Math.pow(10, count)== copy){
+//     console.log("automorphic number");
+// }
+// else console.log("No automorphic")
+// let rev = 0;
+// while(n>0){
+//     rev= (rev*10)+ n%10;
+//     n = Math.floor(n/10);
+// }
+// console.log(rev);
+
+ // While Loop
+
+ // Q. Guess the number 
+
+//  let computer = Math.floor((Math.random()*10)+1);
+//  let user;
+//  let attempt = 0;
+
+//  do{
+//     attempt++;
+//     user = Number(prompt("Enter a Number "))
+//     if(user>computer)console.log("too large");
+//     else if (user<computer)console.log("too small");
+//     else if(user== computer) {console.log("Congratulations you guess the correct number !");
+//     }else console.log("Invalid number");
+    
+    
+    
+    
+//  } while (user != computer);
+
+// Q. Sasta calculator 
+// let n;
+// do{
+//     console.log("Enter 1 for addition");
+//     console.log("Enter 2 for subtraction");
+//     console.log("Enter 3 for Divide");
+//     console.log("Enter 4 for Modulus");
+//     console.log("Enter 5 for multiplication");
+
+//     n = Number(prompt("Enter a number "))
+//     switch(n) {
+//         case 1: {
+//             let a = Number(prompt("Enter first number "))
+//             let b = Number(prompt("Enter second number "))
+//             console.log("Addtion= " + (a+b));
+//             break
+//         }
+//         case 2: {
+//             let a = Number(prompt("Enter first number "))
+//             let b = Number(prompt("Enter second number "))
+//             console.log("Subtraction= " + (a-b));
+//             break
+//         }
+//         case 3: {
+//             let a = Number(prompt("Enter first number "))
+//             let b = Number(prompt("Enter second number "))
+//             console.log("Divide= " + (a/b));
+//             break
+//         }
+//         case 4: {
+//             let a = Number(prompt("Enter first number "))
+//             let b = Number(prompt("Enter second number "))
+//             console.log("Modulus= " + (a%b));
+//             break
+//         }
+//         case 5: {
+//             let a = Number(prompt("Enter first number "))
+//             let b = Number(prompt("Enter second number "))
+//             console.log("Multiply= " + (a*b));
+//             break
+//         }
+//         default: console.log("Invalid number ");
+
+//         }
+//         n = Number(prompt("Enter 10 to recontinue "))
+    
+// }while(n==10)
+
+
+// let n;
+// do{
+//     console.log("Enter 1 for Indian");
+//     console.log("Enter 2 for Italian");
+//     console.log("Enter 3 for Swedish");
+//     console.log("Enter 4 for Chinese");
+//     console.log("Enter 5 for Japanese");
+
+//     n = Number(prompt("Enter a number "))
+//     switch(n) {
+//         case 1: {
+//             let a = Number(prompt("Enter first number "))
+//             let b = Number(prompt("Enter second number "))
+//             console.log("Addtion= " + (a+b));
+//             break
+//         }
+//         case 2: {
+//             let a = Number(prompt("Enter first number "))
+//             let b = Number(prompt("Enter second number "))
+//             console.log("Subtraction= " + (a-b));
+//             break
+//         }
+//         case 3: {
+//             let a = Number(prompt("Enter first number "))
+//             let b = Number(prompt("Enter second number "))
+//             console.log("Divide= " + (a/b));
+//             break
+//         }
+//         case 4: {
+//             let a = Number(prompt("Enter first number "))
+//             let b = Number(prompt("Enter second number "))
+//             console.log("Modulus= " + (a%b));
+//             break
+//         }
+//         case 5: {
+//             let a = Number(prompt("Enter first number "))
+//             let b = Number(prompt("Enter second number "))
+//             console.log("Multiply= " + (a*b));
+//             break
+//         }
+//         default: console.log("Invalid number ");
+
+//         }
+//         n = Number(prompt("Enter 10 to recontinue "))
+    
+// }while(n==10)
+
+// Q. Strong number
+
+let n = Number(prompt("Enter a number "))
+// let copy = n;
+// let ans = 0;
+// while (n>0) {
+//     let dig = n%10;
+//     let fact = 1;
+//     for(let i = 1; i<=dig; i++) {
+//        fact = fact * i;
+//     }
+//     ans = ans + fact;
+//     n= Math.floor(n/10);
+    
+// }
+// if(copy=== ans) console.log("Strong number");
+// else console.log("not strong number");
+
+// Pattern Programming
+
+// Q.      * 
+//       * *
+//     * * *
+//   * * * *
+// * * * * * 
+
+// for (let i=1; i<=n; i++) {
+    
+//     for (let j=1; j<=n-i; j++) 
+//         {
+//         process.stdout.write("  ");
+//     }
+//     for(let j=1; j<=i; j++) {
+//         process.stdout.write("* ")
+//     }
+//     console.log();
+    
+// }
+
+// Q. Draw this
+
+// *       * 
+//   *   *
+//     *
+//   *   *
+// *       *
+
+for (let i=1; i<=n; i++) {
+    
+    for (let j=1; j<=n; j++) 
+        if(i==j || (i+j==n+1))
+        process.stdout.write("* ");
+        else process.stdout.write("  ")
+    
+    
+    console.log();
+    
+}
+
+// Q. 
+
